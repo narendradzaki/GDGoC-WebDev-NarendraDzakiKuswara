@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConnect 2024 — Konferensi Teknologi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-mark">TC</span>
+                <div class="logo-text">
+                    <span class="logo-name">TechConnect</span>
+                    <span class="logo-year">2024</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#about">Tentang</a>
+                <a href="#speakers">Pembicara</a>
+                <a href="#registration-section">Daftar</a>
+            </nav>
+            <button id="dark-mode-toggle" class="toggle-btn" aria-label="Toggle dark mode">
+                <span class="icon">🌙</span>
+                <span class="toggle-label">Dark Mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-noise"></div>
+            <div class="hero-inner">
+                <div class="hero-tag">📅 15 Oktober 2024 · Jakarta</div>
+                <h1 class="hero-title">
+                    Tempat Para<br>
+                    <em>Inovator</em> Bertemu.
+                </h1>
+                <p class="hero-desc">
+                    Konferensi teknologi terbesar tahun ini — membahas AI, Cloud Computing,
+                    Pengembangan Web, dan Keamanan Siber bersama para ahli industri terkemuka.
+                </p>
+                <a href="#registration-section" class="cta-btn">Daftar Sekarang &rarr;</a>
+            </div>
+            <div class="hero-countdown" id="countdown">
+                <div class="count-block"><span id="cd-days">00</span><small>Hari</small></div>
+                <div class="count-sep">:</div>
+                <div class="count-block"><span id="cd-hours">00</span><small>Jam</small></div>
+                <div class="count-sep">:</div>
+                <div class="count-block"><span id="cd-mins">00</span><small>Menit</small></div>
+                <div class="count-sep">:</div>
+                <div class="count-block"><span id="cd-secs">00</span><small>Detik</small></div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about container" id="about">
+            <div class="section-header">
+                <span class="section-tag">Tentang Event</span>
+                <h2>Satu Hari Penuh Inspirasi</h2>
+                <p>Bergabunglah bersama ribuan profesional teknologi dalam satu ruang yang dirancang untuk mendorong kolaborasi dan inovasi.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">🗓</div>
+                    <h3>Kapan</h3>
+                    <p>15 Oktober 2024</p>
+                    <p class="muted">09:00 – 17:00 WIB</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>Dimana</h3>
+                    <p>Grand Ballroom</p>
+                    <p class="muted">Jakarta Convention Center</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🎤</div>
+                    <h3>Pembicara</h3>
+                    <p>10+ Ahli Industri</p>
+                    <p class="muted">Dari perusahaan global & lokal</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🎟</div>
+                    <h3>Tiket</h3>
+                    <p>Gratis untuk umum</p>
+                    <p class="muted">Tempat terbatas 500 peserta</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPEAKERS -->
+        <section class="speakers-section" id="speakers">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Pembicara</span>
+                    <h2>Temui Para Ahlinya</h2>
+                </div>
+                <div class="speakers-grid">
+                    <div class="speaker-card">
+                        <div class="speaker-avatar av-1">AS</div>
+                        <h4>Andi Setiawan</h4>
+                        <p>Head of AI, GoTo</p>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar av-2">RN</div>
+                        <h4>Rina Nurhayati</h4>
+                        <p>CTO, Kreditku</p>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar av-3">DK</div>
+                        <h4>Dimas Kurniawan</h4>
+                        <p>Cloud Architect, AWS</p>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar av-4">SW</div>
+                        <h4>Sari Wulandari</h4>
+                        <p>Security Lead, Bukalapak</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REGISTRATION FORM -->
+        <section class="registration container" id="registration-section">
+            <div class="section-header">
+                <span class="section-tag">Pendaftaran</span>
+                <h2>Daftar Sekarang</h2>
+                <p>Isi formulir di bawah ini untuk mengamankan tempat Anda.</p>
+            </div>
+
+            <div class="form-card">
+                <form id="registration-form" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Nama Lengkap</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Masukkan nama lengkap Anda">
+                        <span class="error-message" id="name-error">⚠ Nama wajib diisi (min. 3 karakter).</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" name="email" placeholder="contoh@email.com">
+                        <span class="error-message" id="email-error">⚠ Masukkan format email yang valid.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status">Status Peserta</label>
+                        <select id="status" name="status">
+                            <option value="">— Pilih Status —</option>
+                            <option value="mahasiswa">Mahasiswa</option>
+                            <option value="profesional">Profesional</option>
+                            <option value="umum">Umum</option>
+                        </select>
+                        <span class="error-message" id="status-error">⚠ Silakan pilih status Anda.</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Kirim Pendaftaran</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-mark sm">TC</span>
+                <span>TechConnect 2024</span>
+            </div>
+            <p class="footer-copy">&copy; 2024 TechConnect Conference. All rights reserved.</p>
+            <p class="footer-loc">📍 Jakarta Convention Center</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
